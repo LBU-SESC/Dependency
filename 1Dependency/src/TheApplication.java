@@ -19,7 +19,7 @@ public class TheApplication extends JFrame{
 	int headX = 10, headY = 50, headXsize = 150, headYsize = 130;
 	int eyeX = headX+(headXsize/4), eyeY = headY+(headYsize/5), eyeSize = headXsize /10, eyeGap = headXsize/3; 
 	int mouthX = eyeX,  mouthY = eyeY + headY, mouthXsize = eyeSize*3, mouthYsize = eyeSize;
-	ArrayList<Shape> shapes = new ArrayList<Shape>();
+	ArrayList<Shape> Shapes = new ArrayList<Shape>();
 	
 	public TheApplication()
 	{
@@ -32,33 +32,33 @@ public class TheApplication extends JFrame{
 			head = new Rectangle();
   		   col = new Color(255, 0, 0);
            head.set(col, headX, headY, headXsize, headYsize);
-           shapes.add(head);
+           Shapes.add(head);
 			
            //left eye
            lefteye = new Circle();		
            col = new Color(255, 255, 255);
            lefteye.set(col, eyeX, eyeY, eyeSize);
-           shapes.add(lefteye);
+           Shapes.add(lefteye);
 			
            //right eye 
            righteye = new Circle();
            col = new Color(255, 255, 255);
            righteye.set(col, eyeX+eyeGap, eyeY, eyeSize);
-           shapes.add(righteye);
+           Shapes.add(righteye);
 			
            //mouth
            mouth = new Ellipse();
            col = new Color(0,0,0);
            mouth.set(col, mouthX, mouthY, mouthXsize, mouthYsize);
-           shapes.add(mouth);
+           Shapes.add(mouth);
 	}
 	
 	public void paint(Graphics g)
 	{
-		for (int i = 0; i<shapes.size(); i++)
+		for (int i = 0; i<Shapes.size(); i++)
 		{
 			Shape s;
-			s = (Shape) shapes.get(i);
+			s = (Shape) Shapes.get(i);
 			if (s != null)
 			{
 				s.draw(g);

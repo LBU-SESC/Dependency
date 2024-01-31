@@ -31,11 +31,11 @@ public class ShapeFactory
         {
             return new Rectangle();
 
-        }*/
+        }
         else if (shapeType.equals("TRIANGLE"))
         {
             return new Triangle();
-        }
+        }*/
         else if (shapeType.equals("SQUARE"))
         {
             return new Square();
