@@ -22,7 +22,7 @@ public class ShapeFactory
             return new Circle();
 
         }
-       /* else if (shapeType.equals("ELLIPSE"))
+        else if (shapeType.equals("ELLIPSE"))
         {
             return new Ellipse();
 
@@ -32,7 +32,7 @@ public class ShapeFactory
             return new Rectangle();
 
         }
-        else if (shapeType.equals("TRIANGLE"))
+       /* else if (shapeType.equals("TRIANGLE"))
         {
             return new Triangle();
         }*/
